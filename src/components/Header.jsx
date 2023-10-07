@@ -30,7 +30,7 @@ export default function Header() {
         </nav>
         <div className='header-content has-fade'>
           <a href='#'>Home</a>
-          <a href=''>About</a>
+          <a href='#about'>About</a>
           <a href='#tools'>Tools</a>
           <a href='#projects'>Projects</a>
           <a href='#connect'>Connect</a>

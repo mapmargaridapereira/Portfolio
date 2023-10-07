@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from '../css/style.scss'
 import Header from '@/components/Header'
+import About from '@/components/About'
 
 
 export default function Home() {
@@ -9,14 +10,7 @@ export default function Home() {
     <main>
     <Header/>
     <div className="home">
-    <div className="home-intro">
-    <div className="content">
-      <div className="content-first">Hello there! I am Margarida</div>
-      <div className="content-second">I am a Fullstack Web Developer who has recently graduated a Web Development bootcamp in Ironhack.</div>
-      <div className="content-third">Besides coding, I am into training Roller Derby with my team and playing cooperative videogames and boardgames, nature, hiking and embroidery.</div>
-      </div>
-    <div className="icon"></div>
-      </div>
+    <About/>
     <div className="tools-section">
       <div id="tools" className="tools-title"><h1>Tools</h1></div>
       <div className="tools-box">

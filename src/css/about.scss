@@ -1,0 +1,103 @@
+
+  .content {
+        display: flex;
+        flex-direction: row;
+ 
+        &-first {
+        place-items: center;
+        animation: float 5s ease-in-out infinite;
+        text-align: center;
+        text-transform: uppercase; 
+        font-weight: bold;
+        letter-spacing: 3px; 
+        font-size: 15px;
+        background-color: $white;
+        padding: 50px; 
+        border-radius: 11px;
+        position: relative;
+        max-width: 30rem;
+        box-shadow: 20px 20px $sandBeige;
+        margin: 2rem;
+    }
+
+        &-first:after {
+        place-items: center;
+        transform: translatey(0px); content: ".";
+        animation: float2 5s ease-in-out infinite;
+        -webkit-text-fill-color: hsl(0, 0%, 100%);
+        text-shadow: 22px 22px $sandBeige;
+        text-align: left; 
+        font-size: 55px;
+        font-weight: bold; 
+        line-height: 30px;
+        width: 55px; 
+        height: 11px;
+        border-radius: 11px;
+        background-color: $white;
+        position: absolute;
+        display: block; 
+        bottom: -30px;
+        left: 0; 
+        z-index: -2;
+        box-shadow: 22px 22px $sandBeige;
+    }
+
+        &-avatar {
+            position: relative;
+            margin: 2rem;
+            width: 100%;
+
+            img {
+                margin: 2rem;
+                width: 50%;
+            }
+        }
+
+        &-second {
+            position: relative;
+            margin: 2rem;
+            font-size: $font-big;
+        }
+
+        &-third {
+            position: relative;
+            margin: 2rem;
+        }
+}
+
+.wrapper {
+    display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.wrapper2 {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.home-intro {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-intro::before {
+        content: "";
+        background-image: url('/static/images/floral_bg_tile.png');
+        background-repeat: repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      opacity: 0.2;
+}
